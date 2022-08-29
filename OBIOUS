@@ -1,0 +1,1139 @@
+-- do not skid man
+
+--  https://discord.gg/QwqASvEMhY
+
+local OBIOUS = Instance.new("ScreenGui")
+local Background = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local Logo = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local Version = Instance.new("TextLabel")
+local TopBar = Instance.new("ScrollingFrame")
+local Home = Instance.new("TextButton")
+local Help = Instance.new("TextButton")
+local Settings = Instance.new("TextButton")
+local Player = Instance.new("TextButton")
+local Random = Instance.new("TextButton")
+local Credits = Instance.new("TextButton")
+local fondo = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local Home_2 = Instance.new("Frame")
+local PlayerImage = Instance.new("ImageLabel")
+local UICorner_3 = Instance.new("UICorner")
+local TextLabel_2 = Instance.new("TextLabel")
+local Updates = Instance.new("Frame")
+local UIGradient = Instance.new("UIGradient")
+local TextLabel_3 = Instance.new("TextLabel")
+local Updates2 = Instance.new("Frame")
+local UIListLayout = Instance.new("UIListLayout")
+local v001 = Instance.new("Frame")
+local TextLabel_4 = Instance.new("TextLabel")
+local TextLabel_5 = Instance.new("TextLabel")
+local Credits_2 = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local UI = Instance.new("TextLabel")
+local Scripting = Instance.new("TextLabel")
+local Help_2 = Instance.new("Frame")
+local Title_2 = Instance.new("TextLabel")
+local allcmds = Instance.new("TextLabel")
+local Help_3 = Instance.new("TextLabel")
+local cmds = Instance.new("Frame")
+local UIListLayout_2 = Instance.new("UIListLayout")
+local cmds_2 = Instance.new("TextLabel")
+local cmds_3 = Instance.new("TextLabel")
+local cmds_4 = Instance.new("TextLabel")
+local cmds_5 = Instance.new("TextLabel")
+local cmds_6 = Instance.new("TextLabel")
+local Promo = Instance.new("TextLabel")
+local S1 = Instance.new("Folder")
+local Settings_2 = Instance.new("Frame")
+local Title_3 = Instance.new("TextLabel")
+local CommandsEnabled = Instance.new("TextLabel")
+local CommandsEnabled_2 = Instance.new("Frame")
+local TextButton = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local UICorner_5 = Instance.new("UICorner")
+local Player_2 = Instance.new("Frame")
+local Title_4 = Instance.new("TextLabel")
+local Pname = Instance.new("TextBox")
+local UICorner_6 = Instance.new("UICorner")
+local Pinfo = Instance.new("Frame")
+local ImageLabel = Instance.new("ImageLabel")
+local UICorner_7 = Instance.new("UICorner")
+local Display = Instance.new("TextLabel")
+local User = Instance.new("TextLabel")
+local Frame = Instance.new("Frame")
+local UIGridLayout = Instance.new("UIGridLayout")
+local Teleport = Instance.new("TextButton")
+local Spectate = Instance.new("TextButton")
+local Katana = Instance.new("TextButton")
+local SpamTeleport = Instance.new("TextButton")
+local Stop = Instance.new("TextButton")
+local Random_2 = Instance.new("Frame")
+local Title_5 = Instance.new("TextLabel")
+local Frame_2 = Instance.new("Frame")
+local UIGridLayout_2 = Instance.new("UIGridLayout")
+local AutoMask = Instance.new("TextButton")
+local CashAura = Instance.new("TextButton")
+local Speed = Instance.new("TextButton")
+
+--Properties:
+
+OBIOUS.Name = "OBIOUS"
+OBIOUS.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui") --game.CoreGui
+OBIOUS.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+OBIOUS.ResetOnSpawn = false
+
+Background.Name = "Background"
+Background.Parent = OBIOUS
+Background.AnchorPoint = Vector2.new(0.5, 0.5)
+Background.BackgroundColor3 = Color3.fromRGB(32, 32, 32)
+Background.Position = UDim2.new(0.499682933, 0, 0.5, 0)
+Background.Size = UDim2.new(0, 449, 0, 375)
+
+UICorner.Parent = Background
+
+Logo.Name = "Logo"
+Logo.Parent = Background
+Logo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Logo.BackgroundTransparency = 1.000
+Logo.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Logo.BorderSizePixel = 0
+Logo.Position = UDim2.new(0, 0, 0.917333305, 0)
+Logo.Size = UDim2.new(0, 449, 0, 31)
+
+TextLabel.Parent = Logo
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0, 0, -0.419354826, 0)
+TextLabel.Size = UDim2.new(0, 449, 0, 36)
+TextLabel.Font = Enum.Font.SourceSansBold
+TextLabel.Text = "OBIOUS"
+TextLabel.TextColor3 = Color3.fromRGB(0, 255, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+Version.Name = "Version"
+Version.Parent = Logo
+Version.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Version.BackgroundTransparency = 1.000
+Version.Position = UDim2.new(0.534521163, 0, 0.189921737, 0)
+Version.Size = UDim2.new(0, 200, 0, 25)
+Version.Font = Enum.Font.SourceSansSemibold
+Version.Text = "v001"
+Version.TextColor3 = Color3.fromRGB(255, 255, 255)
+Version.TextSize = 15.000
+Version.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+Version.TextXAlignment = Enum.TextXAlignment.Right
+
+TopBar.Name = "TopBar"
+TopBar.Parent = Background
+TopBar.Active = true
+TopBar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TopBar.BackgroundTransparency = 1.000
+TopBar.BorderSizePixel = 0
+TopBar.Size = UDim2.new(0, 449, 0, 53)
+TopBar.BottomImage = "rbxassetid://1"
+TopBar.CanvasSize = UDim2.new(5, 0, 0, 0)
+TopBar.MidImage = "rbxassetid://1"
+TopBar.TopImage = "rbxassetid://1"
+TopBar.VerticalScrollBarPosition = Enum.VerticalScrollBarPosition.Left
+
+Home.Name = "Home"
+Home.Parent = TopBar
+Home.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Home.BackgroundTransparency = 1.000
+Home.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Home.Size = UDim2.new(0, 153, 0, 35)
+Home.Font = Enum.Font.SourceSansBold
+Home.Text = "HOME"
+Home.TextColor3 = Color3.fromRGB(0, 255, 0)
+Home.TextSize = 20.000
+Home.TextWrapped = true
+
+Help.Name = "Help"
+Help.Parent = TopBar
+Help.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Help.BackgroundTransparency = 1.000
+Help.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Help.Position = UDim2.new(0.0681514442, 0, 0, 0)
+Help.Size = UDim2.new(0, 153, 0, 35)
+Help.Font = Enum.Font.SourceSansBold
+Help.Text = "HELP"
+Help.TextColor3 = Color3.fromRGB(0, 255, 0)
+Help.TextSize = 20.000
+Help.TextWrapped = true
+
+Settings.Name = "Settings"
+Settings.Parent = TopBar
+Settings.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Settings.BackgroundTransparency = 1.000
+Settings.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Settings.Position = UDim2.new(0.136302888, 0, 0, 0)
+Settings.Size = UDim2.new(0, 153, 0, 35)
+Settings.Font = Enum.Font.SourceSansBold
+Settings.Text = "SETTINGS"
+Settings.TextColor3 = Color3.fromRGB(0, 255, 0)
+Settings.TextSize = 20.000
+Settings.TextWrapped = true
+
+Player.Name = "Player"
+Player.Parent = TopBar
+Player.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Player.BackgroundTransparency = 1.000
+Player.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Player.Position = UDim2.new(0.204454333, 0, 0, 0)
+Player.Size = UDim2.new(0, 153, 0, 35)
+Player.Font = Enum.Font.SourceSansBold
+Player.Text = "PLAYER"
+Player.TextColor3 = Color3.fromRGB(0, 255, 0)
+Player.TextSize = 20.000
+Player.TextWrapped = true
+
+Random.Name = "Random"
+Random.Parent = TopBar
+Random.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Random.BackgroundTransparency = 1.000
+Random.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Random.Position = UDim2.new(0.272605777, 0, 0, 0)
+Random.Size = UDim2.new(0, 153, 0, 35)
+Random.Font = Enum.Font.SourceSansBold
+Random.Text = "RANDOM"
+Random.TextColor3 = Color3.fromRGB(0, 255, 0)
+Random.TextSize = 20.000
+Random.TextWrapped = true
+
+Credits.Name = "Credits"
+Credits.Parent = TopBar
+Credits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credits.BackgroundTransparency = 1.000
+Credits.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Credits.Position = UDim2.new(0.340757221, 0, 0, 0)
+Credits.Size = UDim2.new(0, 153, 0, 35)
+Credits.Font = Enum.Font.SourceSansBold
+Credits.Text = "CREDITS"
+Credits.TextColor3 = Color3.fromRGB(0, 255, 0)
+Credits.TextSize = 20.000
+Credits.TextWrapped = true
+
+fondo.Name = "fondo"
+fondo.Parent = TopBar
+fondo.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+fondo.Position = UDim2.new(0, 0, 0.547169805, 0)
+fondo.Size = UDim2.new(0, 153, 0, 6)
+
+UICorner_2.Parent = fondo
+
+Home_2.Name = "Home"
+Home_2.Parent = Background
+Home_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Home_2.BackgroundTransparency = 1.000
+Home_2.Position = UDim2.new(0, 0, 0.136000007, 0)
+Home_2.Size = UDim2.new(0, 449, 0, 280)
+
+PlayerImage.Name = "PlayerImage"
+PlayerImage.Parent = Home_2
+PlayerImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PlayerImage.BackgroundTransparency = 1.000
+PlayerImage.Position = UDim2.new(0.0779509991, 0, 0.0857142881, 0)
+PlayerImage.Size = UDim2.new(0, 60, 0, 60)
+PlayerImage.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+
+UICorner_3.CornerRadius = UDim.new(0, 50)
+UICorner_3.Parent = PlayerImage
+
+TextLabel_2.Parent = Home_2
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0.249443218, 0, 0.14642857, 0)
+TextLabel_2.Size = UDim2.new(0, 200, 0, 25)
+TextLabel_2.Font = Enum.Font.SourceSansBold
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextSize = 20.000
+TextLabel_2.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextXAlignment = Enum.TextXAlignment.Left
+
+Updates.Name = "Updates"
+Updates.Parent = Home_2
+Updates.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+Updates.BorderSizePixel = 0
+Updates.Position = UDim2.new(0, 0, 0.410714298, 0)
+Updates.Size = UDim2.new(0, 449, 0, 6)
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(13, 88, 4)), ColorSequenceKeypoint.new(0.34, Color3.fromRGB(0, 255, 0)), ColorSequenceKeypoint.new(0.69, Color3.fromRGB(0, 255, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(13, 88, 4))}
+UIGradient.Parent = Updates
+
+TextLabel_3.Parent = Home_2
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Position = UDim2.new(0.287305146, 0, 0.442857146, 0)
+TextLabel_3.Size = UDim2.new(0, 200, 0, 25)
+TextLabel_3.Font = Enum.Font.SourceSansBold
+TextLabel_3.Text = "RECENT UPDATES"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextSize = 20.000
+TextLabel_3.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+Updates2.Name = "Updates2"
+Updates2.Parent = Home_2
+Updates2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Updates2.BackgroundTransparency = 1.000
+Updates2.Position = UDim2.new(0, 0, 0.532142878, 0)
+Updates2.Size = UDim2.new(0, 449, 0, 122)
+
+UIListLayout.Parent = Updates2
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+
+v001.Name = "v001"
+v001.Parent = Updates2
+v001.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+v001.BackgroundTransparency = 1.000
+v001.Size = UDim2.new(0, 449, 0, 24)
+
+TextLabel_4.Parent = v001
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.Position = UDim2.new(0.048997771, 0, 0, 0)
+TextLabel_4.Size = UDim2.new(0, 427, 0, 24)
+TextLabel_4.Font = Enum.Font.SourceSansSemibold
+TextLabel_4.Text = "v001 - First version"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextSize = 16.000
+TextLabel_4.TextXAlignment = Enum.TextXAlignment.Left
+
+TextLabel_5.Parent = Home_2
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.Position = UDim2.new(0.538975477, 0, 0.910714328, 0)
+TextLabel_5.Size = UDim2.new(0, 200, 0, 25)
+TextLabel_5.Font = Enum.Font.SourceSansSemibold
+TextLabel_5.Text = "by jaorbw#5640 and scope#9999"
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.TextSize = 20.000
+TextLabel_5.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.TextXAlignment = Enum.TextXAlignment.Right
+
+Credits_2.Name = "Credits"
+Credits_2.Parent = Background
+Credits_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credits_2.BackgroundTransparency = 1.000
+Credits_2.Position = UDim2.new(0, 0, 0.136000007, 0)
+Credits_2.Size = UDim2.new(0, 449, 0, 280)
+Credits_2.Visible = false
+
+Title.Name = "Title"
+Title.Parent = Credits_2
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.Position = UDim2.new(0.287305176, 0, -0.0249998979, 0)
+Title.Size = UDim2.new(0, 200, 0, 25)
+Title.Font = Enum.Font.SourceSansBold
+Title.Text = "CREDITS"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextSize = 30.000
+Title.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+UI.Name = "UI"
+UI.Parent = Credits_2
+UI.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+UI.BackgroundTransparency = 1.000
+UI.Position = UDim2.new(0.0178174134, 0, 0.0892858058, 0)
+UI.Size = UDim2.new(0, 200, 0, 25)
+UI.Font = Enum.Font.SourceSansBold
+UI.Text = "UI"
+UI.TextColor3 = Color3.fromRGB(255, 255, 255)
+UI.TextSize = 20.000
+UI.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+UI.TextXAlignment = Enum.TextXAlignment.Left
+
+Scripting.Name = "Scripting"
+Scripting.Parent = Credits_2
+Scripting.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Scripting.BackgroundTransparency = 1.000
+Scripting.Position = UDim2.new(0.0178174134, 0, 0.442857206, 0)
+Scripting.Size = UDim2.new(0, 200, 0, 25)
+Scripting.Font = Enum.Font.SourceSansBold
+Scripting.Text = "SCRIPTING"
+Scripting.TextColor3 = Color3.fromRGB(255, 255, 255)
+Scripting.TextSize = 20.000
+Scripting.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+Scripting.TextXAlignment = Enum.TextXAlignment.Left
+
+Help_2.Name = "Help"
+Help_2.Parent = Background
+Help_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Help_2.BackgroundTransparency = 1.000
+Help_2.Position = UDim2.new(0, 0, 0.136000007, 0)
+Help_2.Size = UDim2.new(0, 449, 0, 280)
+Help_2.Visible = false
+
+Title_2.Name = "Title"
+Title_2.Parent = Help_2
+Title_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_2.BackgroundTransparency = 1.000
+Title_2.Position = UDim2.new(0.287305176, 0, -0.0249998979, 0)
+Title_2.Size = UDim2.new(0, 200, 0, 25)
+Title_2.Font = Enum.Font.SourceSansBold
+Title_2.Text = "HELP"
+Title_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_2.TextSize = 30.000
+Title_2.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+allcmds.Name = "allcmds"
+allcmds.Parent = Help_2
+allcmds.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+allcmds.BackgroundTransparency = 1.000
+allcmds.Position = UDim2.new(0.0178174134, 0, 0.0892858058, 0)
+allcmds.Size = UDim2.new(0, 200, 0, 25)
+allcmds.Font = Enum.Font.SourceSansBold
+allcmds.Text = "ALL COMMANDS:"
+allcmds.TextColor3 = Color3.fromRGB(255, 255, 255)
+allcmds.TextSize = 20.000
+allcmds.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+allcmds.TextXAlignment = Enum.TextXAlignment.Left
+
+Help_3.Name = "Help"
+Help_3.Parent = Help_2
+Help_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Help_3.BackgroundTransparency = 1.000
+Help_3.Position = UDim2.new(0.0178174134, 0, 0.642857194, 0)
+Help_3.Size = UDim2.new(0, 200, 0, 25)
+Help_3.Font = Enum.Font.SourceSansBold
+Help_3.Text = "Need more help?"
+Help_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Help_3.TextSize = 20.000
+Help_3.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+Help_3.TextXAlignment = Enum.TextXAlignment.Left
+
+cmds.Name = "cmds"
+cmds.Parent = Help_2
+cmds.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+cmds.BackgroundTransparency = 1.000
+cmds.Position = UDim2.new(0.0178173725, 0, 0.174999997, 0)
+cmds.Size = UDim2.new(0, 441, 0, 113)
+
+UIListLayout_2.Parent = cmds
+UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
+
+cmds_2.Name = "cmds"
+cmds_2.Parent = cmds
+cmds_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+cmds_2.BackgroundTransparency = 1.000
+cmds_2.Position = UDim2.new(0, 0, 0.628318608, 0)
+cmds_2.Size = UDim2.new(0, 441, 0, 20)
+cmds_2.Font = Enum.Font.SourceSansSemibold
+cmds_2.Text = "!stop - Stops everything."
+cmds_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+cmds_2.TextSize = 15.000
+cmds_2.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+cmds_2.TextWrapped = true
+cmds_2.TextXAlignment = Enum.TextXAlignment.Left
+
+cmds_3.Name = "cmds"
+cmds_3.Parent = cmds
+cmds_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+cmds_3.BackgroundTransparency = 1.000
+cmds_3.Position = UDim2.new(0.0178173929, 0, 0.175636008, 0)
+cmds_3.Size = UDim2.new(0, 200, 0, 25)
+cmds_3.Font = Enum.Font.SourceSansSemibold
+cmds_3.Text = "!start [Player] - Spam teleports you to the selected player."
+cmds_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+cmds_3.TextSize = 15.000
+cmds_3.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+cmds_3.TextXAlignment = Enum.TextXAlignment.Left
+
+cmds_4.Name = "cmds"
+cmds_4.Parent = cmds
+cmds_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+cmds_4.BackgroundTransparency = 1.000
+cmds_4.Position = UDim2.new(0, 0, 0.221238941, 0)
+cmds_4.Size = UDim2.new(0, 441, 0, 46)
+cmds_4.Font = Enum.Font.SourceSansSemibold
+cmds_4.Text = "!katana [Player] - Spam brings the selected player to you so you can spam katana on them. (Does not work with guns) (They cant see that you are bringing them)"
+cmds_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+cmds_4.TextSize = 15.000
+cmds_4.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+cmds_4.TextWrapped = true
+cmds_4.TextXAlignment = Enum.TextXAlignment.Left
+
+cmds_5.Name = "cmds"
+cmds_5.Parent = cmds
+cmds_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+cmds_5.BackgroundTransparency = 1.000
+cmds_5.Position = UDim2.new(0, 0, 0.628318608, 0)
+cmds_5.Size = UDim2.new(0, 441, 0, 20)
+cmds_5.Font = Enum.Font.SourceSansSemibold
+cmds_5.Text = "!to [Player] - Teleports you to a player."
+cmds_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+cmds_5.TextSize = 15.000
+cmds_5.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+cmds_5.TextWrapped = true
+cmds_5.TextXAlignment = Enum.TextXAlignment.Left
+
+cmds_6.Name = "cmds"
+cmds_6.Parent = cmds
+cmds_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+cmds_6.BackgroundTransparency = 1.000
+cmds_6.Position = UDim2.new(0, 0, 0.628318608, 0)
+cmds_6.Size = UDim2.new(0, 441, 0, 20)
+cmds_6.Font = Enum.Font.SourceSansSemibold
+cmds_6.Text = "!prefix [String] - Change the prefix for the commands."
+cmds_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+cmds_6.TextSize = 15.000
+cmds_6.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+cmds_6.TextWrapped = true
+cmds_6.TextXAlignment = Enum.TextXAlignment.Left
+
+Promo.Name = "Promo"
+Promo.Parent = Help_2
+Promo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Promo.BackgroundTransparency = 1.000
+Promo.Position = UDim2.new(0.0200445466, 0, 0.731890023, 0)
+Promo.Size = UDim2.new(0, 441, 0, 20)
+Promo.Font = Enum.Font.SourceSansSemibold
+Promo.Text = "https://discord.gg/QwqASvEMhY"
+Promo.TextColor3 = Color3.fromRGB(255, 255, 255)
+Promo.TextSize = 15.000
+Promo.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+Promo.TextWrapped = true
+Promo.TextXAlignment = Enum.TextXAlignment.Left
+
+S1.Name = "S1"
+S1.Parent = Background
+
+Settings_2.Name = "Settings"
+Settings_2.Parent = Background
+Settings_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Settings_2.BackgroundTransparency = 1.000
+Settings_2.Position = UDim2.new(0, 0, 0.136000007, 0)
+Settings_2.Size = UDim2.new(0, 449, 0, 280)
+Settings_2.Visible = false
+
+Title_3.Name = "Title"
+Title_3.Parent = Settings_2
+Title_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_3.BackgroundTransparency = 1.000
+Title_3.Position = UDim2.new(0.287305176, 0, -0.0249998979, 0)
+Title_3.Size = UDim2.new(0, 200, 0, 25)
+Title_3.Font = Enum.Font.SourceSansBold
+Title_3.Text = "SETTINGS"
+Title_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_3.TextSize = 30.000
+Title_3.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+CommandsEnabled.Name = "CommandsEnabled"
+CommandsEnabled.Parent = Settings_2
+CommandsEnabled.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CommandsEnabled.BackgroundTransparency = 1.000
+CommandsEnabled.Position = UDim2.new(0.191536754, 0, 0.0961757153, 0)
+CommandsEnabled.Size = UDim2.new(0, 363, 0, 34)
+CommandsEnabled.Font = Enum.Font.SourceSansSemibold
+CommandsEnabled.Text = "Commands Enabled"
+CommandsEnabled.TextColor3 = Color3.fromRGB(255, 255, 255)
+CommandsEnabled.TextSize = 20.000
+CommandsEnabled.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+CommandsEnabled.TextWrapped = true
+CommandsEnabled.TextXAlignment = Enum.TextXAlignment.Left
+
+CommandsEnabled_2.Name = "CommandsEnabled"
+CommandsEnabled_2.Parent = Settings_2
+CommandsEnabled_2.BackgroundColor3 = Color3.fromRGB(48, 218, 18)
+CommandsEnabled_2.Position = UDim2.new(0.0400890857, 0, 0.103571422, 0)
+CommandsEnabled_2.Size = UDim2.new(0, 57, 0, 31)
+
+TextButton.Parent = CommandsEnabled_2
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.Position = UDim2.new(-0.0170000009, 0, 0, 0)
+TextButton.Size = UDim2.new(0, 30, 0, 31)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = " "
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 14.000
+
+UICorner_4.CornerRadius = UDim.new(0, 50)
+UICorner_4.Parent = TextButton
+
+UICorner_5.CornerRadius = UDim.new(0, 50)
+UICorner_5.Parent = CommandsEnabled_2
+
+Player_2.Name = "Player"
+Player_2.Parent = Background
+Player_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Player_2.BackgroundTransparency = 1.000
+Player_2.Position = UDim2.new(0, 0, 0.136000007, 0)
+Player_2.Size = UDim2.new(0, 449, 0, 280)
+Player_2.Visible = false
+
+Title_4.Name = "Title"
+Title_4.Parent = Player_2
+Title_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_4.BackgroundTransparency = 1.000
+Title_4.Position = UDim2.new(0.287305176, 0, -0.0249998979, 0)
+Title_4.Size = UDim2.new(0, 200, 0, 25)
+Title_4.Font = Enum.Font.SourceSansBold
+Title_4.Text = "PLAYER"
+Title_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_4.TextSize = 30.000
+Title_4.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+Pname.Name = "Pname"
+Pname.Parent = Player_2
+Pname.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Pname.BorderSizePixel = 0
+Pname.Position = UDim2.new(0.0935412049, 0, 0.110714287, 0)
+Pname.Size = UDim2.new(0, 366, 0, 26)
+Pname.Font = Enum.Font.SourceSans
+Pname.PlaceholderText = "Player name here"
+Pname.Text = ""
+Pname.TextColor3 = Color3.fromRGB(255, 255, 255)
+Pname.TextSize = 14.000
+
+UICorner_6.Parent = Pname
+
+Pinfo.Name = "Pinfo"
+Pinfo.Parent = Player_2
+Pinfo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Pinfo.BackgroundTransparency = 1.000
+Pinfo.Position = UDim2.new(0, 0, 0.232142851, 0)
+Pinfo.Size = UDim2.new(0, 449, 0, 215)
+Pinfo.Visible = false
+
+ImageLabel.Parent = Pinfo
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.Position = UDim2.new(0.0423162617, 0, 0.0374584794, 0)
+ImageLabel.Size = UDim2.new(0, 60, 0, 60)
+ImageLabel.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+
+UICorner_7.CornerRadius = UDim.new(0, 50)
+UICorner_7.Parent = ImageLabel
+
+Display.Name = "Display"
+Display.Parent = Pinfo
+Display.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Display.BackgroundTransparency = 1.000
+Display.Position = UDim2.new(0.213808477, 0, 0.0372055769, 0)
+Display.Size = UDim2.new(0, 363, 0, 34)
+Display.Font = Enum.Font.SourceSansSemibold
+Display.Text = "Name"
+Display.TextColor3 = Color3.fromRGB(255, 255, 255)
+Display.TextSize = 20.000
+Display.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+Display.TextWrapped = true
+Display.TextXAlignment = Enum.TextXAlignment.Left
+
+User.Name = "User"
+User.Parent = Pinfo
+User.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+User.BackgroundTransparency = 1.000
+User.Position = UDim2.new(0.213808477, 0, 0.130062729, 0)
+User.Size = UDim2.new(0, 363, 0, 34)
+User.Font = Enum.Font.SourceSansSemibold
+User.Text = "Name"
+User.TextColor3 = Color3.fromRGB(255, 255, 255)
+User.TextSize = 15.000
+User.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+User.TextWrapped = true
+User.TextXAlignment = Enum.TextXAlignment.Left
+
+Frame.Parent = Pinfo
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BackgroundTransparency = 1.000
+Frame.Position = UDim2.new(0.0222717151, 0, 0.367441833, 0)
+Frame.Size = UDim2.new(0, 449, 0, 100)
+
+UIGridLayout.Parent = Frame
+UIGridLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIGridLayout.CellSize = UDim2.new(0, 140, 0, 27)
+
+Teleport.Name = "Teleport"
+Teleport.Parent = Frame
+Teleport.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Teleport.BorderSizePixel = 0
+Teleport.Size = UDim2.new(0, 153, 0, 27)
+Teleport.Font = Enum.Font.SourceSans
+Teleport.Text = "Teleport"
+Teleport.TextColor3 = Color3.fromRGB(255, 255, 255)
+Teleport.TextSize = 14.000
+
+Spectate.Name = "Spectate"
+Spectate.Parent = Frame
+Spectate.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Spectate.BorderSizePixel = 0
+Spectate.Size = UDim2.new(0, 200, 0, 50)
+Spectate.Font = Enum.Font.SourceSans
+Spectate.Text = "Spectate"
+Spectate.TextColor3 = Color3.fromRGB(255, 255, 255)
+Spectate.TextSize = 14.000
+
+Katana.Name = "Katana"
+Katana.Parent = Frame
+Katana.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Katana.BorderSizePixel = 0
+Katana.Size = UDim2.new(0, 200, 0, 50)
+Katana.Font = Enum.Font.SourceSans
+Katana.Text = "Katana"
+Katana.TextColor3 = Color3.fromRGB(255, 255, 255)
+Katana.TextSize = 14.000
+
+SpamTeleport.Name = "SpamTeleport"
+SpamTeleport.Parent = Frame
+SpamTeleport.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+SpamTeleport.BorderSizePixel = 0
+SpamTeleport.Position = UDim2.new(0.0935412049, 0, 0.439999998, 0)
+SpamTeleport.Size = UDim2.new(0, 200, 0, 50)
+SpamTeleport.Font = Enum.Font.SourceSans
+SpamTeleport.Text = "Spam Teleport"
+SpamTeleport.TextColor3 = Color3.fromRGB(255, 255, 255)
+SpamTeleport.TextSize = 14.000
+
+Stop.Name = "Stop"
+Stop.Parent = Frame
+Stop.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Stop.BorderSizePixel = 0
+Stop.Position = UDim2.new(0.0935412049, 0, 0.439999998, 0)
+Stop.Size = UDim2.new(0, 200, 0, 50)
+Stop.Font = Enum.Font.SourceSans
+Stop.Text = "Stop"
+Stop.TextColor3 = Color3.fromRGB(255, 255, 255)
+Stop.TextSize = 14.000
+
+Random_2.Name = "Random"
+Random_2.Parent = Background
+Random_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Random_2.BackgroundTransparency = 1.000
+Random_2.Position = UDim2.new(0, 0, 0.136000007, 0)
+Random_2.Size = UDim2.new(0, 449, 0, 280)
+Random_2.Visible = false
+
+Title_5.Name = "Title"
+Title_5.Parent = Random_2
+Title_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_5.BackgroundTransparency = 1.000
+Title_5.Position = UDim2.new(0.287305176, 0, -0.0249998979, 0)
+Title_5.Size = UDim2.new(0, 200, 0, 25)
+Title_5.Font = Enum.Font.SourceSansBold
+Title_5.Text = "RANDOM"
+Title_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_5.TextSize = 30.000
+Title_5.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+Frame_2.Parent = Random_2
+Frame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_2.BackgroundTransparency = 1.000
+Frame_2.Position = UDim2.new(0.0222717151, 0, 0.110299028, 0)
+Frame_2.Size = UDim2.new(0, 449, 0, 236)
+
+UIGridLayout_2.Parent = Frame_2
+UIGridLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
+UIGridLayout_2.CellSize = UDim2.new(0, 140, 0, 27)
+
+AutoMask.Name = "AutoMask"
+AutoMask.Parent = Frame_2
+AutoMask.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+AutoMask.BorderSizePixel = 0
+AutoMask.Size = UDim2.new(0, 200, 0, 50)
+AutoMask.Font = Enum.Font.SourceSans
+AutoMask.Text = "Auto Mask"
+AutoMask.TextColor3 = Color3.fromRGB(255, 255, 255)
+AutoMask.TextSize = 14.000
+
+CashAura.Name = "CashAura"
+CashAura.Parent = Frame_2
+CashAura.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+CashAura.BorderSizePixel = 0
+CashAura.Size = UDim2.new(0, 200, 0, 50)
+CashAura.Font = Enum.Font.SourceSans
+CashAura.Text = "Cash Aura"
+CashAura.TextColor3 = Color3.fromRGB(255, 255, 255)
+CashAura.TextSize = 14.000
+
+Speed.Name = "Speed"
+Speed.Parent = Frame_2
+Speed.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Speed.BorderSizePixel = 0
+Speed.Size = UDim2.new(0, 200, 0, 50)
+Speed.Font = Enum.Font.SourceSans
+Speed.Text = "Speed (C)"
+Speed.TextColor3 = Color3.fromRGB(255, 255, 255)
+Speed.TextSize = 14.000
+
+local automask = Instance.new("BoolValue",S1)
+local cashaura = Instance.new("BoolValue",S1)
+local prefix = Instance.new("StringValue", Background)
+prefix.Name = "Prefix"
+prefix.Value = "!"
+local cmdsenabled = Instance.new("BoolValue",S1)
+
+local fly = Instance.new("BoolValue",S1)
+
+local speed = Instance.new("BoolValue",S1)
+cmdsenabled.Value = true
+automask.Name = "AutoMask"
+cashaura.Name = "CashAura"
+cmdsenabled.Name = "CommandsEnabled"
+fly.Name = "Fly"
+speed.Name = "Speed"
+
+-- Scripts:
+
+local function MZDU_fake_script() -- PlayerImage.LocalScript 
+	local script = Instance.new('LocalScript', PlayerImage)
+
+	wait(1)
+	script.Parent.Image = game.Players:GetUserThumbnailAsync(game.Players.LocalPlayer.UserId,Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size420x420)
+end
+coroutine.wrap(MZDU_fake_script)()
+local function TEGF_fake_script() -- TextLabel_2.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel_2)
+
+	wait(1)
+	script.Parent.Text = "Welcome back, "..game.Players.LocalPlayer.Name
+end
+coroutine.wrap(TEGF_fake_script)()
+local function KILFZLD_fake_script() -- Background.Framework 
+	local script = Instance.new('LocalScript', Background)
+
+	local TweenService = game:GetService("TweenService")
+	local info = TweenInfo.new(
+		.2,
+		Enum.EasingStyle.Sine,
+		Enum.EasingDirection.Out,
+		0,
+		false,
+		0
+	)
+	local TopBar = script.Parent.TopBar
+	wait(1)
+	print("SUCCESSFULLY LOADED OBIOUS (THE BEST UNITED HOOD SCRIPT) BY jaorbw#5640 AND scope#9999")
+	for i,button in pairs(TopBar:GetChildren()) do
+		if button:IsA("TextButton") then
+			button.MouseButton1Click:Connect(function()
+				local change = {Position = UDim2.new(button.Position.X.Scale,button.Position.X.Offset, 0.547,0)}
+				local ChangePos = TweenService:Create(TopBar.fondo,info,change)
+				ChangePos:Play()
+				for i, frame in pairs(script.Parent:GetChildren()) do
+					if frame:IsA("Frame") then
+						if frame.Name ~= "Logo" then 
+							frame.Visible = false		
+						end
+						script.Parent:FindFirstChild(button.Name).Visible = true
+					end
+				end
+			end)
+		end
+	end
+end
+coroutine.wrap(KILFZLD_fake_script)()
+local function FLEZ_fake_script() -- cmds_2.LocalScript 
+	local script = Instance.new('LocalScript', cmds_2)
+
+	while wait() do
+		script.Parent.Text = script.Parent.Parent.Parent.Parent.Prefix.Value.."stop - Stops everything." 
+	end
+end
+coroutine.wrap(FLEZ_fake_script)()
+local function IHZOV_fake_script() -- cmds_3.LocalScript 
+	local script = Instance.new('LocalScript', cmds_3)
+
+	while wait() do
+		script.Parent.Text = script.Parent.Parent.Parent.Parent.Prefix.Value.."start [Player] - Spam teleports you to the selected player." 
+	end
+end
+coroutine.wrap(IHZOV_fake_script)()
+local function TBET_fake_script() -- cmds_4.LocalScript 
+	local script = Instance.new('LocalScript', cmds_4)
+
+	while wait() do
+		script.Parent.Text = script.Parent.Parent.Parent.Parent.Prefix.Value.."katana [Player] - Spam brings the selected player to you so you can spam katana on them. (Does not work with guns) (They cant see that you are bringing them)" 
+	end
+end
+coroutine.wrap(TBET_fake_script)()
+local function DLDVSHD_fake_script() -- cmds_5.LocalScript 
+	local script = Instance.new('LocalScript', cmds_5)
+
+	while wait() do
+		script.Parent.Text = script.Parent.Parent.Parent.Parent.Prefix.Value.."to [Player] - Teleports you to a player." 
+	end
+end
+coroutine.wrap(DLDVSHD_fake_script)()
+local function RXTC_fake_script() -- cmds_6.LocalScript 
+	local script = Instance.new('LocalScript', cmds_6)
+
+	while wait() do
+		script.Parent.Text = script.Parent.Parent.Parent.Parent.Prefix.Value.."prefix [String] - Change the prefix for the commands." 
+	end
+end
+coroutine.wrap(RXTC_fake_script)()
+local function FTWL_fake_script() -- Background.SettingsHandler 
+	local script = Instance.new('LocalScript', Background)
+
+	local sett = script.Parent.S1
+	
+	
+	game.Players.LocalPlayer.CharacterAdded:Connect(function()
+		if sett.Fly.Value == true then
+			
+		end
+		if sett.AutoMask.Value == true then
+			
+		end
+	end)
+	
+	game:GetService("UserInputService").InputEnded:Connect(function(inp)
+		if inp.KeyCode == Enum.KeyCode.C then
+			game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+		end
+	end)
+	
+	
+	game:GetService("UserInputService").InputBegan:Connect(function(inp)
+		if sett.Speed.Value == false then return end
+		if inp.KeyCode == Enum.KeyCode.C then
+			game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100
+		end
+	end)
+	
+end
+coroutine.wrap(FTWL_fake_script)()
+local function ZQTVZHH_fake_script()
+	local script = Instance.new('LocalScript', Background)
+
+	while wait(.1) do
+		if script.Parent.S1.CashAura.Value == true then
+			for i,v in pairs(workspace:GetChildren()) do
+				if v.Name == "Money" then
+					fireclickdetector(v.ClickDetector)
+				end
+			end	
+		end
+	end
+end
+coroutine.wrap(ZQTVZHH_fake_script)()
+local function DMGY_fake_script() -- Background.Drag 
+	local script = Instance.new('LocalScript', Background)
+
+	local UIS = game:GetService('UserInputService')
+	local frame = script.Parent
+	local dragToggle = nil
+	local dragSpeed = .15
+	local dragStart = nil
+	local startPos = nil
+	
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			dragToggle = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
+end
+coroutine.wrap(DMGY_fake_script)()
+local function RCFQSGR_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	local TweenService = game:GetService("TweenService")
+	local info = TweenInfo.new(
+		.2,
+		Enum.EasingStyle.Sine,
+		Enum.EasingDirection.Out,
+		0,
+		false,
+		0
+	)
+	local sett = script.Parent.Parent.Parent.Parent.S1
+	local selected = false
+	script.Parent.MouseButton1Click:Connect(function()
+		local Yes = {Position = UDim2.new(-0.017, 0,0, 0)}
+		local No = {Position = UDim2.new(0.456, 0,0, 0),}
+		local Yes2 = {BackgroundColor3 = Color3.fromRGB(48, 218, 18)}
+		local No2 = {BackgroundColor3 = Color3.fromRGB(132, 132, 132)}
+		selected = not selected
+		if selected == true then
+			TweenService:Create(script.Parent, info, Yes):Play()
+			TweenService:Create(script.Parent.Parent, info, Yes2):Play()
+			sett.CommandsEnabled.Value = true
+		else
+			TweenService:Create(script.Parent, info, No):Play()
+			TweenService:Create(script.Parent.Parent, info, No2):Play()
+			sett.CommandsEnabled.Value = false
+		end
+	end)
+end
+coroutine.wrap(RCFQSGR_fake_script)()
+local function GZTM_fake_script() -- Pname.FindPlayer 
+	local script = Instance.new('LocalScript', Pname)	
+	game:GetService("UserInputService").TextBoxFocusReleased:Connect(function(text)
+		local function GetPlayer(input) 
+			for _, plr in pairs(game.Players:GetPlayers()) do
+				if (string.lower(input) == string.sub(string.lower(plr.Name), 1, #input)) then
+					return plr;
+				end
+			end
+		end
+		if text == script.Parent then
+			local text_1 = script.Parent.Text
+			local plr = GetPlayer(text_1)
+			if plr then
+				local PINFO = script.Parent.Parent.Pinfo
+				PINFO.User.Text = plr.Name
+				PINFO.Display.Text = plr.DisplayName
+				PINFO.ImageLabel.Image = game.Players:GetUserThumbnailAsync(plr.UserId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size420x420)
+				wait()
+				PINFO.Visible = true
+			else
+				script.Parent.Parent.Pinfo.Visible = false
+			end
+		end
+	end)
+end
+coroutine.wrap(GZTM_fake_script)()
+local function UYSNW_fake_script() -- Pinfo.Handler 
+	local script = Instance.new('LocalScript', Pinfo)
+
+	local frame = script.Parent.Frame
+	_G.Attacking = false
+	local spectating = false
+	frame.Spectate.MouseButton1Click:Connect(function()
+		spectating = not spectating
+		if spectating == true then
+			workspace.CurrentCamera.CameraSubject = workspace:FindFirstChild(script.Parent.User.Text).Humanoid
+		else
+			workspace.CurrentCamera.CameraSubject = game.Players.LocalPlayer.Character.Humanoid
+		end
+	end)
+	
+	frame.Stop.MouseButton1Click:Connect(function()
+		_G.Attacking = false
+	end)
+	
+	frame.Teleport.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace:FindFirstChild(script.Parent.User.Text).HumanoidRootPart.CFrame
+	end)
+	
+	frame.SpamTeleport.MouseButton1Click:Connect(function()
+		_G.Attacking = true
+		local char = workspace:FindFirstChild(script.Parent.User.Text)
+		repeat wait(.1)
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = char.HumanoidRootPart.CFrame
+		until _G.Attacking == false or char.Humanoid.Health < .5
+	end)
+	
+	frame.Katana.MouseButton1Click:Connect(function()
+		_G.Attacking = true
+		local char = workspace:FindFirstChild(script.Parent.User.Text)
+		repeat wait()
+			char.HumanoidRootPart.CFrame = 	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0,-.5,-2.5)
+		until _G.Attacking == false or char.Humanoid.Health < .5
+	end)
+end
+coroutine.wrap(UYSNW_fake_script)()
+local function WPWCM_fake_script() -- AutoMask.LocalScript 
+	local script = Instance.new('LocalScript', AutoMask)
+
+	local clicked = false
+	local sett = script.Parent.Parent.Parent.Parent.S1
+	script.Parent.MouseButton1Click:Connect(function()
+		clicked = not clicked
+		if clicked == true then
+			script.Parent.BackgroundColor3 = Color3.fromRGB(51, 111, 11)
+			sett.AutoMask.Value = true
+		else
+			script.Parent.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+			sett.AutoMask.Value = false
+		end
+	end)
+end
+coroutine.wrap(WPWCM_fake_script)()
+local function EXCES_fake_script() -- CashAura.LocalScript 
+	local script = Instance.new('LocalScript', CashAura)
+
+	local clicked = false
+	local sett = script.Parent.Parent.Parent.Parent.S1
+	script.Parent.MouseButton1Click:Connect(function()
+		clicked = not clicked
+		if clicked == true then
+			script.Parent.BackgroundColor3 = Color3.fromRGB(51, 111, 11)
+			sett.CashAura.Value = true
+		else
+			script.Parent.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+			sett.CashAura.Value = false
+		end
+	end)
+end
+coroutine.wrap(EXCES_fake_script)()
+local function HVVXZMT_fake_script() -- Speed.LocalScript 
+	local script = Instance.new('LocalScript', Speed)
+
+	local clicked = false
+	local sett = script.Parent.Parent.Parent.Parent.S1
+	script.Parent.MouseButton1Click:Connect(function()
+		clicked = not clicked
+		if clicked == true then
+			script.Parent.BackgroundColor3 = Color3.fromRGB(51, 111, 11)
+			sett.Speed.Value = true
+		else
+			script.Parent.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+			sett.Speed.Value = false
+		end
+	end)
+end
+coroutine.wrap(HVVXZMT_fake_script)()
+
+_G.Attacking = false
+game.Players.LocalPlayer.Chatted:Connect(function(m1)
+	if cmdsenabled.Value == false then return end
+	if not  workspace:FindFirstChild(game.Players.LocalPlayer.Name) then return end
+	if not  workspace:FindFirstChild(game.Players.LocalPlayer.Name):FindFirstChild("HumanoidRootPart") then return end
+	local HRP = game.Players.LocalPlayer.Character.HumanoidRootPart
+	local function GetPlayer(input) 
+		for _, plr in pairs(game.Players:GetPlayers()) do
+			if (string.lower(input) == string.sub(string.lower(plr.Name), 1, #input)) then
+				return plr;
+			end
+		end
+	end
+	local msg = string.split(m1, " ")
+	if msg[1] == prefix.Value.."stop" then
+		_G.Attacking = false
+		_G.Speeding = false
+	elseif msg[1] == prefix.Value.."start" then
+		_G.Attacking = true
+		local char = GetPlayer(msg[2]).Character
+		repeat wait(.1)
+			HRP.CFrame = char.HumanoidRootPart.CFrame
+		until _G.Attacking == false or char.Humanoid.Health < .5
+	elseif msg[1] == prefix.Value.."katana" then
+		_G.Attacking = true
+		local char = GetPlayer(msg[2]).Character
+		repeat wait()
+			char.HumanoidRootPart.CFrame = HRP.CFrame * CFrame.new(0,-.5,-2.5)
+		until _G.Attacking == false or char.Humanoid.Health < .5
+	elseif msg[1] == prefix.Value.."to" then
+		local char = GetPlayer(msg[2]).Character
+		HRP.CFrame = char.HumanoidRootPart.CFrame * CFrame.new(0,-.5,-2.5)
+	elseif msg[1] == prefix.Value.."prefix" then
+		prefix.Value = msg[2]
+	end
+end)
