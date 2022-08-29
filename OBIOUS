@@ -1,7 +1,6 @@
 -- do not skid man
 
 --  https://discord.gg/QwqASvEMhY
-
 local OBIOUS = Instance.new("ScreenGui")
 local Background = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
@@ -78,9 +77,10 @@ local CashAura = Instance.new("TextButton")
 local Speed = Instance.new("TextButton")
 
 --Properties:
-
+if game.PlaceId == 9654491321 then game.Players.LocalPlayer:Kick("oops") end
+if game.PlaceId ~= 8979156214 then return end
 OBIOUS.Name = "OBIOUS"
-OBIOUS.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui") --game.CoreGui
+OBIOUS.Parent = game.CoreGui
 OBIOUS.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 OBIOUS.ResetOnSpawn = false
 
@@ -92,7 +92,6 @@ Background.Position = UDim2.new(0.499682933, 0, 0.5, 0)
 Background.Size = UDim2.new(0, 449, 0, 375)
 
 UICorner.Parent = Background
-if game.PlaceId == 9654491321 then game.Players.LocalPlayer:Kick("no man dont do this") end
 Logo.Name = "Logo"
 Logo.Parent = Background
 Logo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
