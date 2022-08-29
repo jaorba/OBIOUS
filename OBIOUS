@@ -92,7 +92,7 @@ Background.Position = UDim2.new(0.499682933, 0, 0.5, 0)
 Background.Size = UDim2.new(0, 449, 0, 375)
 
 UICorner.Parent = Background
-
+if game.PlaceId == 9654491321 then game.Players.LocalPlayer:Kick("no man dont do this") end
 Logo.Name = "Logo"
 Logo.Parent = Background
 Logo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
