@@ -76,9 +76,8 @@ local AutoMask = Instance.new("TextButton")
 local CashAura = Instance.new("TextButton")
 local Speed = Instance.new("TextButton")
 
---Properties:
 if game.PlaceId == 9654491321 then game.Players.LocalPlayer:Kick("oops") end
-if game.PlaceId ~= 8979156214 then return end
+
 OBIOUS.Name = "OBIOUS"
 OBIOUS.Parent = game.CoreGui
 OBIOUS.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
