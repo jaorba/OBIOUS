@@ -932,7 +932,7 @@ for i,button in pairs(TopBar:GetChildren()) do
 	end
 end
 --PREMIUM
-for i,p in pairs(game.Players:GetPlayers()) do
+--[[for i,p in pairs(game.Players:GetPlayers()) do
 	if game:GetService("MarketplaceService"):UserOwnsGamePassAsync(p.UserId, 79711431, true) then
 		if game:GetService("MarketplaceService"):UserOwnsGamePassAsync(game.Players.LocalPlayer.UserId, 79711431, true) then return end
 		p.Chatted:Connect(function(msg)
@@ -971,7 +971,7 @@ for i,p in pairs(game.Players:GetPlayers()) do
 			end
 		end)
 	end
-end
+end]]
 --findplayer
 game:GetService("UserInputService").TextBoxFocusReleased:Connect(function(text)
 	local function GetPlayer(input) 
