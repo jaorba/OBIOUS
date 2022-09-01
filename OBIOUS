@@ -81,7 +81,7 @@ local ESP = Instance.new("TextButton")
 --Properties:
 
 OBIOUS.Name = "OBIOUS"
-OBIOUS.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+OBIOUS.Parent = game.CoreGui
 OBIOUS.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 OBIOUS.ResetOnSpawn = false
 
